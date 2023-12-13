@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento</title>
+    <style type="text/css">
+        body
+        {background-color: #ADD8E6;
+        font-size:20px;}
+        
+        input
+        {font-size:16px;}
+
+        form
+        {text-align:justify;
+        padding-left:20px;}
+
+        button {
+        padding: 10px 15px;
+        font-size: 16px;
+        font-weight: bold;
+        color: #000080;
+        border: 2px solid #00008B;
+        border-radius: 10px;
+        margin: 10px;
+        cursor: pointer;
+        }
+
+        button:hover {
+        background-color: #0000FF;
+        color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <center><h1>Formulário de inscrição do usuário</h1></center>
+    <br/>
+    <center>
+        <form action="resposta.html" method="get">
+            <label for="campo-nome"><b>Escreva seu nome:</b></label>
+            <input name="nome" required type="text" id="campo-nome"/>
+            <br/>
+            <br/>
+            <label for="campo-email"><b>Escreva seu email:</b></label>
+            <input name="email" required type="email" placeholder="me@exemplo.com" id="campo-email"/>
+            <br/>
+            <br/>
+            <label for="campo-senha"><b>Digite uma senha:</b></label>
+            <input name="senha" required type="password" id="campo-senha">
+            <br/>
+            <br/>
+            <label for="campo-busca"><b>Buscar:</b></label>
+            <input name="busca" placeholder="1234" type="search" id="campo-busca">
+            <br/>
+            <br/>
+            <label for="campo-fone"><b>Digite seu telefone:</b></label>
+            <input name="fone" type="tel" minlength="8" id="campo-fone">
+            <br/>
+            <br/>
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpar formulário</button>
+        </form>
+    </center>
+</body>
+</html>
